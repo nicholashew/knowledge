@@ -6,14 +6,16 @@
 
 * [ASP.NET](programming\aspnet\README.md)
   * [ASP.NET Core](programming\aspnet\netcore\README.md)
-    * [Logging](programming\aspnet\netcore\Logging\README.md)
-      * [Simple Serilog](programming\aspnet\netcore\Logging\simple-serilog.md)
+    * [Logging](programming\aspnet\netcore\logging\README.md)
+      * [Simple Serilog](programming\aspnet\netcore\logging\simple-serilog.md)
     * [Middleware](programming\aspnet\netcore\middleware\README.md)
-      * [IP Restriction](programming\aspnet\netcore\Middleware\ip-restriction-middleware.md)
+      * [IP Restriction](programming\aspnet\netcore\middleware\ip-restriction-middleware.md)
   * [ASP.NET Framework](programming\aspnet\framework\README.md)
-
+* [Database](programming\database\README.md)
+* [Java](programming\java\README.md)
 * [Javascript](programming\javascript\README.md)
   * [Javascript Libraries](programming\javascript\javascript-libraries.md)
+* [Python](programming\python\README.md)
 
 ## Tools
 
