@@ -4,8 +4,9 @@ ASP.NET is an open source web framework for building modern web apps and service
 
 ## ASP.NET Core
 
-* [Introduction](netcore/README.md)
+* [Introduction](netcore/)
 
 ## ASP.NET Framework
 
-* [Introduction](framework/README.md)
+* [Introduction](framework.md)
+
