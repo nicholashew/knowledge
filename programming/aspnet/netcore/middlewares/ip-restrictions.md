@@ -1,14 +1,12 @@
 # IP Restrictions
 
-
-Sometimes we need to limit from users to access to Web App by IP address, 
-and this can be done by adding a Middleware to filtering the request.
+Sometimes we need to limit from users to access to Web App by IP address, and this can be done by adding a Middleware to filtering the request.
 
 ## Adding White List IP Address Config
 
 First configure the whitelisted IP addresses in the `appsettings.json` by adding a new section called `IpSecuritySettings`
 
-```json
+```javascript
 "IpSecuritySettings": {
   "AllowedIPs": "::1,0.0.0.0,127.0.0.1" // comma-delimited list of whitelisted IP addresses, seperator ',' or ';'
 }
@@ -16,7 +14,7 @@ First configure the whitelisted IP addresses in the `appsettings.json` by adding
 
 Add the `IpSecuritySettings.cs` for the configuration:
 
-```cs
+```csharp
 public class IpSecuritySettings
 {
     public string AllowedIPs { get; set; }
@@ -35,10 +33,9 @@ public class IpSecuritySettings
 }
 ```
 
-Once you have added the `IpSecuritySettings.cs`, you will need to configure the options in the `Startup.cs`.
-Add the IpSecuritySettings in `ConfigureServices` with the Configure extension method:
+Once you have added the `IpSecuritySettings.cs`, you will need to configure the options in the `Startup.cs`. Add the IpSecuritySettings in `ConfigureServices` with the Configure extension method:
 
-```cs
+```csharp
 public class Startup
 {
     public Startup(IHostingEnvironment env)
@@ -75,7 +72,7 @@ public class Startup
 
 Add a new file `IpRestrictionMiddleware.cs` to filtering the request which is not whitelisted IP addresses:
 
-```cs
+```csharp
 public class IpRestrictionMiddleware
 {
     public readonly RequestDelegate Next;
@@ -106,7 +103,7 @@ public class IpRestrictionMiddleware
 
 In the `Startup.cs`, add `IpRestrictionMiddleware` as the middleware in the pipeline in `Configure` with the UseMiddleware extension method:
 
-```cs
+```csharp
 public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
 {
     loggerFactory.AddConsole(Configuration.GetSection("Logging"));
@@ -121,4 +118,5 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerF
 
 ## Example
 
-[IP_Restriction](https://github.com/nicholashew/aspnet-samples/tree/master/Middleware/IP_Restriction)
+[IP\_Restriction](https://github.com/nicholashew/aspnet-samples/tree/master/Middleware/IP_Restriction)
+
