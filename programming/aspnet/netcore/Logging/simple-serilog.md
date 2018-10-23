@@ -5,7 +5,6 @@
 Install Serilog packages for your own project, run the command belows to install Serilog packages.
 
 **Package Manager**
-
 ```
 PM> Install-Package Serilog.Sinks.RollingFile -Version 3.3.0
 PM> Install-Package Serilog.Extensions.Logging -Version 2.0.2
@@ -15,7 +14,6 @@ PM> Install-Package Serilog.Settings.Configuration -Version 2.4.0
 ```
 
 **.NET CLI**
-
 ```
 dotnet add package Serilog.Sinks.RollingFile --version 3.3.0
 dotnet add package Serilog.Extensions.Logging --version 2.0.2
