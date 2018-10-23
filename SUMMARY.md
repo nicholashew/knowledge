@@ -1,7 +1,12 @@
 # Table of contents
 
-* [My Knowledge Wiki](README.md)
+* [Read Me](README.md)
+
+## Programming
+
+* [Javascript](programming\javascript\README.md)
+  * [Javascript Libraries](programming\javascript\javascript-libraries.md)
 
 ## Tools
 
-* [Development Tools](tools/development-tools.md)
+* [Development Tools](tools\development-tools.md)
