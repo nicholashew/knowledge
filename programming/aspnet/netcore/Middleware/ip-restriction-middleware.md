@@ -1,7 +1,6 @@
 # IP Restriction Middleware
 
-Sometimes we need to limit from users to access to Web App by IP address, 
-and this can be done by adding a Middleware to filtering the request.
+Sometimes we need to limit from users to access to Web App by IP address, and this can be done by adding a Middleware to filtering the request.
 
 ## Adding White List IP Address Config
 
