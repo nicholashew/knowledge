@@ -39,7 +39,7 @@ A collection of awesome .NET Core / ASP.NET frameworks, libraries, tools, resour
 * [ASP.NET Core Documentation](https://docs.microsoft.com/en-us/aspnet/core/) - The official ASP.NET Core documentation site.
 * [ASP.NET Documentation](https://docs.microsoft.com/en-us/aspnet/overview) - The official ASP.NET documentation site.
 
-## Frameworks, Libraries and Tool
+## Frameworks, Libraries and Tools
 
 ### Testing Frameworks
 
