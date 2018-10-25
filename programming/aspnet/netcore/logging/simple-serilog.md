@@ -1,6 +1,6 @@
 # Simple Serilog
 
-### Install Packages
+## Install Packages
 
 Install Serilog packages for your own project, run the command belows to install Serilog packages.
 
@@ -24,7 +24,7 @@ dotnet add package Serilog.Enrichers.Thread --version 3.0.0
 dotnet add package Serilog.Settings.Configuration --version 2.4.0
 ```
 
-### Configuration
+## Configuration
 
 Configure the Serilog in the `appsettings.json` in the section of “Serilog”:
 
@@ -93,7 +93,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-### Using a Static Logger
+## Using a Static Logger
 
 Loggers are created using a static Logger object:
 
@@ -103,7 +103,7 @@ Log.Logger.Information("No one listens to me!");
 
 The example above will use a static logger that does not record events anywhere.
 
-### Using a Logger
+## Using a Logger
 
 Create an API controller `TestsController.cs`. We now are injecting an instance of ILogger. Of which we are using to Logging inside our Get\(\) method.
 
@@ -139,7 +139,7 @@ Much like `TestsController.cs` we inject an instance of ILogger and perform logg
 
 If we run our app now and consume the API endpoint `http://localhost/api/tests`, we should end up with some logging results in the console.
 
-### Create a Logger Extensions
+## Create a Logger Extensions
 
 This is an optional extension for logger to define custom logging messages.
 
@@ -211,8 +211,7 @@ public static class LoggerExtensions
 }
 ```
 
-### Resources
+## Resources
 
 * [Serilog](https://github.com/serilog/serilog)
 * [Sample SimpleSerilog](https://github.com/nicholashew/aspnet-samples/tree/master/Logger/SimpleSerilog)
-
