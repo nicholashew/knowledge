@@ -11,6 +11,8 @@ A collection of awesome .NET Core / ASP.NET frameworks, libraries, tools, resour
   * [API Documentation](#api-documentation)
   * [Authentication and Authorization](#authentication-and-authorization)
   * [CMS](#cms)
+  * [Database](#database)
+  * [Database Drivers](#database-drivers)
   * [E-Commerce and Payments](#e-commerce-and-payments)
     * [E-Commerce CMS](#e-commerce-cms)
     * [Payment Gateway](#payment-gateway)
@@ -27,6 +29,7 @@ A collection of awesome .NET Core / ASP.NET frameworks, libraries, tools, resour
     * [Compression](#compression)
     * [Date](#date)
     * [Fake Generator](#fake-generator)
+    * [Formatter](#formatter)
     * [Geography](#geography)  
     * [Validation](#validation)  
   * [SDK](#sdk)
@@ -68,6 +71,7 @@ A collection of awesome .NET Core / ASP.NET frameworks, libraries, tools, resour
   * [IdentityServer4.EntityFramework](https://github.com/IdentityServer/IdentityServer4.EntityFramework) - EntityFramework persistence layer for IdentityServer4
   * [IdentityServer4.Contrib.MongoDB](https://github.com/diogodamiani/IdentityServer4.Contrib.MongoDB) - MongoDB persistence layer for IdentityServer4
   * [TwentyTwenty.IdentityServer4.EntityFrameworkCore](https://github.com/2020IP/TwentyTwenty.IdentityServer4.EntityFrameworkCore) - Entity Framework Core persistence layer
+* [IdentityModel](https://github.com/IdentityModel/IdentityModel2) - .NET standard helper library for claims-based identity, OAuth 2.0 and OpenID Connect.
 * [OpenIddict](https://github.com/openiddict/openiddict-core) - Easy-to-use OpenID Connect server for ASP.NET Core
 
 ### CMS
@@ -77,6 +81,20 @@ A collection of awesome .NET Core / ASP.NET frameworks, libraries, tools, resour
 * [Orchard Core](https://github.com/OrchardCMS/OrchardCore) - Orchard Core is an open-source modular and extensible application framework built with ASP.NET Core, and a content management system (CMS) built on top of that application framework. 
 * [Umbraco CMS](https://github.com/umbraco/Umbraco-CMS) - Umbraco is a fully-featured, open source Content Management System loved by thousands for its flexibility and great editing experience.
 * [nopCommerce](https://github.com/nopSolutions/nopCommerce) - Free open-source ecommerce shopping cart (ASP.NET Core) 
+
+### Database
+
+* [EventStore](https://github.com/EventStore/EventStore) - The open-source, functional database with Complex Event Processing in JavaScript. 
+* [LiteDB](https://github.com/mbdavid/LiteDB) - A .NET NoSQL Document Store in a single data file
+* [RavenDB ](https://github.com/ravendb/ravendb) - An ACID NoSQL Document Database
+* [Apache Ignite](https://github.com/apache/ignite) - Mirror of Apache Ignite, a memory-centric distributed database, caching, and processing platform for transactional, analytical, and streaming workloads delivering in-memory speeds at petabyte scale.
+
+### Database Drivers
+* [MySQL Connector](https://dev.mysql.com/downloads/connector/net/) - Connector/Net is a fully-managed ADO.NET driver for MySQL
+* [Npgsql](https://github.com/npgsql/Npgsql) - .NET data provider for PostgreSQL
+* [MongoDB](https://github.com/mongodb/mongo-csharp-driver) - Official MongoDB C# driver
+* [StackExchange Redis](https://stackexchange.github.io/StackExchange.Redis/) - General purpose Redis client from StackExchange
+* [RethinkDb.Driver](https://github.com/bchavez/RethinkDb.Driver/) - A RethinkDB database driver in C# striving for 100% ReQL API compatibility and completeness.
 
 ### E-Commerce and Payments
 
@@ -159,12 +177,15 @@ A collection of awesome .NET Core / ASP.NET frameworks, libraries, tools, resour
 
 #### Date
 
-* [Humanizer](https://github.com/Humanizr/Humanizer) - ⭐️ Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities
 * [NodaTime](https://github.com/nodatime/nodatime) - A better date and time API for .NET http://nodatime.org
 
 #### Fake Generator
 
 * [Bogus](https://github.com/bchavez/Bogus) - A simple and sane fake data generator for C#, F#, and VB.NET. Based on and ported from the famed faker.js.
+
+#### Formatter
+
+* [Humanizer](https://github.com/Humanizr/Humanizer) - ⭐️ Humanizer meets all your .NET needs for manipulating and displaying strings, enums, dates, times, timespans, numbers and quantities
 
 #### Geography
 
