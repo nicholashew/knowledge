@@ -1,8 +1,8 @@
-# SQL Style Guides
+# SQL Style Guide
 
 ## Tables Name
 
-* Use a collective name or, less ideally, a plural form. For example (in order of preference) `staff` and `employees`.
+* Use a collective name or, less ideally, a plural form. For example \(in order of preference\) `staff` and `employees`.
 * Do not prefix with `tbl` or any other such descriptive prefix or Hungarian notation.
 * Never give a table the same name as one of its columns and vice versa.
 * Avoid, where possible, concatenating two table names together to create the name of a relationship table. Rather than `cars_mechanics` prefer `services`.
@@ -28,7 +28,7 @@ CREATE TABLE dbo.staff (
 
 ## Reserved Words
 
-Always use UPPERCASE for reserved keywords. 
+Always use UPPERCASE for reserved keywords.
 
 Eg: `SELECT, AS, FROM, WHERE, LIKE, OR, ORDER BY, ASC, DESC, etc...`.
 
@@ -45,8 +45,7 @@ LIMIT 10
 
 ## Left Align Root Keywords and Code Blocks
 
-Root keywords should all start on the same character boundary and on their own line. 
-This is counter to the common "rivers" pattern described here.
+Root keywords should all start on the same character boundary and on their own line. This is counter to the common "rivers" pattern described here.
 
 ```sql
 SELECT
@@ -95,6 +94,7 @@ WHERE
 ## Parentheses
 
 If parentheses span multiple lines:
+
 * The opening parenthesis should terminate the line.
 * The closing parenthesis should be lined up under the first character of the line that starts the multi-line construct.
 * The contents of the parentheses should be indented one level.
@@ -163,3 +163,4 @@ LIMIT 10
 
 * [SQL style guide by Simon Holywell](https://www.sqlstyle.guide/)
 * [Firefox SQL Style Guide](https://docs.telemetry.mozilla.org/concepts/sql_style.html)
+

@@ -6,21 +6,25 @@
 
 To install CsvHelper, run the following command:
 
-**Package Manager Console**
-```
+{% tabs %}
+{% tab title="Package Manager Console" %}
+```bash
 PM> Install-Package CsvHelper
 ```
+{% endtab %}
 
-**.NET CLI Console**
-```
+{% tab title=".NET CLI Console" %}
+```bash
 > dotnet add package CsvHelper
 ```
+{% endtab %}
+{% endtabs %}
 
 ## Sample Utilities
 
 A simple wrapper for basic usage.
 
-```cs
+```csharp
 using CsvHelper;
 using System.Collections.Generic;
 using System.IO;
@@ -88,7 +92,7 @@ namespace CsvTest
 
 A sample extensions to write dynamic objects by using ExpandoObject
 
-```cs
+```csharp
 using System.Collections.Generic;
 using System.Dynamic;
 
@@ -126,7 +130,7 @@ namespace CsvTest
 
 ## Sample Usage
 
-```cs
+```csharp
 class Program
 {
     public class Person
@@ -135,7 +139,7 @@ class Program
         public string Gender { get; set; }
         public DateTime BirthDate { get; set; }
     }
-    
+
     static void Main(string[] args)
     {
         string path = "persons.csv";
@@ -165,3 +169,4 @@ class Program
 ## Resource
 
 * [Official Documentation](http://joshclose.github.io/CsvHelper/)
+

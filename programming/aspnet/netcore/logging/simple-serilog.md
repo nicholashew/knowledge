@@ -6,7 +6,7 @@ Install Serilog packages for your own project, run the command belows to install
 
 **Package Manager**
 
-```
+```text
 PM> Install-Package Serilog.Sinks.RollingFile -Version 3.3.0
 PM> Install-Package Serilog.Extensions.Logging -Version 2.0.2
 PM> Install-Package Serilog.Enrichers.Environment -Version 2.1.2
@@ -16,7 +16,7 @@ PM> Install-Package Serilog.Settings.Configuration -Version 2.4.0
 
 **.NET CLI**
 
-```
+```text
 dotnet add package Serilog.Sinks.RollingFile --version 3.3.0
 dotnet add package Serilog.Extensions.Logging --version 2.0.2
 dotnet add package Serilog.Enrichers.Environment --version 2.1.2
@@ -28,7 +28,7 @@ dotnet add package Serilog.Settings.Configuration --version 2.4.0
 
 Configure the Serilog in the `appsettings.json` in the section of “Serilog”:
 
-```json
+```javascript
 {
   "Serilog": {
     "MinimumLevel": "Information",
@@ -47,7 +47,7 @@ Configure the Serilog in the `appsettings.json` in the section of “Serilog”:
 
 Serilog levels can be overridden per logging source as below, for example we only want to filter Microsoft and System category from Level Information and below.
 
-```json
+```javascript
 {
   "Serilog": {
     "MinimumLevel": {
@@ -63,7 +63,7 @@ Serilog levels can be overridden per logging source as below, for example we onl
 
 Configure the serilog options in the `Startup.cs` with the Startup method:
 
-```cs
+```csharp
 public class Startup
     {
         public IConfiguration Configuration { get; }
@@ -83,7 +83,7 @@ public class Startup
 
 Add the Serilog in `ConfigureServices` with the AddLogging extension method:
 
-```cs
+```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     // Add Serilog
@@ -97,7 +97,7 @@ public void ConfigureServices(IServiceCollection services)
 
 Loggers are created using a static Logger object:
 
-```cs
+```csharp
 Log.Logger.Information("No one listens to me!");
 ```
 
@@ -109,7 +109,7 @@ Create an API controller `TestsController.cs`. We now are injecting an instance 
 
 Update the **TestsController** class with the following.
 
-```cs
+```csharp
 [Route("api/[controller]")]
 public class TestsController : Controller
 {
@@ -143,7 +143,7 @@ If we run our app now and consume the API endpoint `http://localhost/api/tests`,
 
 This is an optional extension for logger to define custom logging messages.
 
-```cs
+```csharp
 using Microsoft.Extensions.Logging;
 using System;
 
@@ -215,3 +215,4 @@ public static class LoggerExtensions
 
 * [Serilog](https://github.com/serilog/serilog)
 * [Sample SimpleSerilog](https://github.com/nicholashew/aspnet-samples/tree/master/Logger/SimpleSerilog)
+

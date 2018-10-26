@@ -12,5 +12,6 @@ ASP.NET is an open source web framework for building modern web apps and service
 
 ## Cheat Sheets
 
-* [Official dotnet cli command (1.x - 2.1)](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet?tabs=netcore21)
+* [Official dotnet cli command \(1.x - 2.1\)](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet?tabs=netcore21)
 * [dotnet cli Cheat Sheet](http://en.otomatikmuhendis.com/2018/07/02/cheat-sheet-for-dotnet-cli/)
+

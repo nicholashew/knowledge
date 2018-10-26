@@ -1,23 +1,23 @@
 # String Helper
 
-* [Sample Usage](#sample-usage)
-  * [LowerFirst](#lowerfirst)
-  * [UpperFirst](#upperfirst)
-  * [TitleCase](#titlecase)
-  * [Repeat](#repeat)
-  * [Slugify](#slugify)
-  * [Split](#split)
-  * [Truncate](#truncate)
-  * [TrimStart](#trimstart)
-* [Source Code](#source-code)
+* [Sample Usage](string-helper.md#sample-usage)
+  * [LowerFirst](string-helper.md#lowerfirst)
+  * [UpperFirst](string-helper.md#upperfirst)
+  * [TitleCase](string-helper.md#titlecase)
+  * [Repeat](string-helper.md#repeat)
+  * [Slugify](string-helper.md#slugify)
+  * [Split](string-helper.md#split)
+  * [Truncate](string-helper.md#truncate)
+  * [TrimStart](string-helper.md#trimstart)
+* [Source Code](string-helper.md#source-code)
 
 ## Sample Usage
 
 ### LowerFirst
 
-**Arguments**: ([string=''])
+**Arguments**: \(\[string=''\]\)
 
-```cs
+```csharp
 Console.Write(StringHelper.LowerFirst("Fred"));
 // => 'fred'
 
@@ -27,27 +27,27 @@ Console.Write(StringHelper.LowerFirst("FRED"));
 
 ### UpperFirst
 
-**Arguments**: ([string=''])
+**Arguments**: \(\[string=''\]\)
 
-```cs
+```csharp
 Console.Write(StringHelper.UpperFirst("fred"));
 // => Fred
 ```
 
 ### TitleCase
 
-**Arguments**: ([string=''])
+**Arguments**: \(\[string=''\]\)
 
-```cs
+```csharp
 Console.Write(StringHelper.TitleCase("fred rush"));
 // => Fred Rush
 ```
 
 ### Repeat
 
-**Arguments**: ([string=''], [n=1])
+**Arguments**: \(\[string=''\], \[n=1\]\)
 
-```cs
+```csharp
 Console.Write(StringHelper.Repeat("*", 3));
 // => '***'
 
@@ -60,9 +60,9 @@ Console.Write(StringHelper.Repeat("abc", 0));
 
 ### Slugify
 
-**Arguments**: ([string=''], [length=0])
+**Arguments**: \(\[string=''\], \[length=0\]\)
 
-```cs
+```csharp
 Console.Write(StringHelper.Slugify("Biossegurança: precaução de contato"));
 // => biosseguranca-precaucao-de-contato
 
@@ -72,19 +72,19 @@ Console.Write(StringHelper.Slugify("Biossegurança: precaução de contato", 20)
 
 ### Split
 
-**Arguments**: ([string=''], separator)
+**Arguments**: \(\[string=''\], separator\)
 
-```cs
+```csharp
 var arr = StringHelper.Split("a-b-c", "-");
 Console.Write("[{0}]", string.Join(", ", arr));
-// => ['a', 'b', 'c']
+// => ['a', 'b', 'c']
 ```
 
 ### Truncate
 
-**Arguments**: ([string=''], [maxLength=30], [omission='...'])
+**Arguments**: \(\[string=''\], \[maxLength=30\], \[omission='...'\]\)
 
-```cs
+```csharp
 Console.Write(StringHelper.Truncate("hi-diddly-ho there, neighborino"));
 // => 'hi-diddly-ho there, neighbo...'
 
@@ -94,9 +94,9 @@ Console.Write(StringHelper.Truncate("hi-diddly-ho there, neighborino", 24, " [..
 
 ### TrimStart
 
-**Arguments**: ([string=''], chars)
+**Arguments**: \(\[string=''\], chars\)
 
-```cs
+```csharp
 Console.Write(StringHelper.TrimStart("-_-abc-_-", "-_-"));
 // => 'abc-_-'
 ```
@@ -105,7 +105,7 @@ Console.Write(StringHelper.TrimStart("-_-abc-_-", "-_-"));
 
 A sample string helper for common usage.
 
-```cs
+```csharp
 using System;
 using System.Globalization;
 using System.Text;
@@ -227,7 +227,7 @@ namespace Knowledge
             if (string.IsNullOrEmpty(value)) return value;
             return value.Length <= maxLength ? value : value.Substring(0, maxLength) + omission;
         }
-        
+
         /// <summary>
         /// Splits string by separator
         /// </summary>
@@ -406,3 +406,4 @@ namespace Knowledge
     }
 }
 ```
+
