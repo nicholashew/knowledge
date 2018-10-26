@@ -59,7 +59,7 @@
     public static const string SHIPPING_TYPE = "DropShip";
     ```
 
-    *Why: Caps grap too much attention.*
+    > *Why: Caps grap too much attention.*
 
 5. Avoid using **Abbreviations**. Exceptions: abbreviations commonly used as names, such as **Id, Xml, Ftp, Uri**.
 
@@ -79,7 +79,7 @@
     UriPart uriPart;
     ```
 
-    *Why: Prevents inconsistent abbreviations.*
+    > *Why: Prevents inconsistent abbreviations.*
 
 6. Do use **PascalCasing** for abbreviations 3 characters or more (2 chars are both uppercase)
 
@@ -89,7 +89,7 @@
     UIControl uiControl;
     ```
 
-    *Why: Caps would grap visually too much attention*
+    > *Why: Caps would grap visually too much attention*
 
 7. Do **NOT** use **Underscores** in identifiers. Exception: you can prefix private static variables with an underscore.
 
@@ -106,7 +106,7 @@
     private DateTime _modifiedDate;
     ```
 
-    *Why: makes code more natural to read (without 'slur'). Also avoids underline stress (inability to see underline).*
+    > *Why: makes code more natural to read (without 'slur'). Also avoids underline stress (inability to see underline).*
 
 8. Do use **predefined type names** instead of system type names like Int16, Single, UInt64, etc
 
@@ -155,7 +155,7 @@
     }
     ```
 
-    *Why: Microsoft has a different standard, but developers have overwhelmingly preferred vertically aligned brackets*
+    > *Why: Microsoft has a different standard, but developers have overwhelmingly preferred vertically aligned brackets*
 
 14. Do declare all member variables at the top of a class, with static variables at the very top.
 
@@ -175,7 +175,7 @@
     }
     ```
 
-    *Why: generally accepted practice that prevents the need to hunt for variable declarations.*
+    > *Why: generally accepted practice that prevents the need to hunt for variable declarations.*
 
 15. Do use singular names for enums. Exception: bit field enums
 
@@ -200,7 +200,7 @@
     }
     ```
 
-    *Why: consistent with the Microsoft's .NET Framework and makes the code more natural to read. Plural flags because enum can hold multiple values (using bitwise 'OR').*
+    > *Why: consistent with the Microsoft's .NET Framework and makes the code more natural to read. Plural flags because enum can hold multiple values (using bitwise 'OR').*
 
 16. Do **NOT** explicitly specify a type of an enum or values of enums (except bit fields)
 
@@ -224,7 +224,7 @@
     }
     ```
 
-    *Why: can create confusion when relying on actual types and values.*
+    > *Why: can create confusion when relying on actual types and values.*
 
 17. Do **NOT** suffix enum names with Enum or Flags
 
@@ -268,7 +268,7 @@
     } 
     ```
 
-    *Why: consistent with prior rule of no type indicators in identifiers*
+    > *Why: consistent with prior rule of no type indicators in identifiers*
 
 18. Do use suffix **EventArgs** / **EventHandler** / **Exception** to comprising the information:
 
