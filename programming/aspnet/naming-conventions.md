@@ -284,57 +284,64 @@
 
 * [DoFactory C# Coding Standards and Naming Conventions](https://www.dofactory.com/reference/csharp-coding-standards)
 * [Microsoft Naming Conventions](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/general-naming-conventions)
+* [corefx Framework Design Guidelines](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/framework-design-guidelines-digest.md)
 
 ## Naming Conventions for ASP.NET Controls
 
 In general, naming ASP.NET controls is made using Camel Case naming convention, where the prefix of the name is the abbreviation of the control type name.
 
-| STANDARD CONTROLS |                 |
-|-------------------|-----------------|
-| btn               | Button          |
-| cb                | CheckBox        |
-| cbl               | CheckBoxList    |
-| ddl               | DropDownList    |
-| fu                | FileUpload      |
-| hdn               | HiddenField     |
-| lnk               | Hyperlink       |
-| img               | Image           |
-| ibtn(btn)         | ImageButton     |
-| lbl               | Label           |
-| lbtn(btn)         | LinkButton      |
-| lb                | ListBox         |
-| lit               | Literal         |
-| mv                | MultiView       |
-| pnl               | Panel           |
-| ph                | PlaceHolder     |
-| rb                | RadioButton     |
-| rbl               | RadioButtonList |
-| tbl               | Table           |
-| txt               | TextBox         |
-| v                 | View            |
+### Standard Controls
 
-| DATA CONTROLS |                   |
-|---------------|-------------------|
-| dtl(dl)       | DataList          |
-| dp            | DataPager         |
-| dtv           | DetailsView       |
-| ets           | EntityDataSource  |
-| fv            | FormView          |
-| gv            | GridView          |
-| lds           | LinqDataSource    |
-| lv            | ListView          |
-| ods           | ObjectDataSource  |
-| qe            | QueryExtender     |
-| rpt           | Repeater          |
-| smd           | SiteMapDataSource |
-| sds           | SqlDataSource     |
-| xds           | XmlDataSource     |
+| Prefix    | Control         | Example         |
+|-----------|-----------------|-----------------|
+| btn       | Button          | btnSubmit       |
+| cb        | CheckBox        | cbTerms         |
+| cbl       | CheckBoxList    | cblTodos        |
+| ddl       | DropDownList    | ddlCountries    |
+| fu        | FileUpload      | fuVideo         |
+| hf        | HiddenField     | hfBookId        |
+| lnk       | Hyperlink       | lnkViewMore     |
+| img       | Image           | imgBanner       |
+| ibtn(btn) | ImageButton     | ibtnDelete      |
+| lbl       | Label           | lblName         |
+| lbtn(btn) | LinkButton      | lbtnSubmit      |
+| lb        | ListBox         | lbSelectedItems |
+| lit       | Literal         | litOutput       |
+| mv        | MultiView       | mvContainer     |
+| pnl       | Panel           | pnlToggle       |
+| ph        | PlaceHolder     | phMessage       |
+| rb        | RadioButton     | rbStatus        |
+| rbl       | RadioButtonList | rblPackages     |
+| tbl       | Table           | tblReport       |
+| txt       | TextBox         | txtEmail        |
+| v         | View            | vRegisterForm   |
 
-| VALIDATION CONTROLS |                            |
-|---------------------|----------------------------|
-| cpv                 | CompareValidator           |
-| ctv                 | CustomValidator            |
-| rv                  | RangeValidator             |
-| rev                 | RegularExpressionValidator |
-| rfv                 | RequiredFieldValidator     |
-| vs                  | ValidationSummary          |
+### Data Controls
+
+| Prefix  | Control           | Example    |
+|---------|-------------------|------------|
+| dtl(dl) | DataList          | dtlMovie   |
+| dp      | DataPager         | dpMovie    |
+| dtv     | DetailsView       | dtvMovie   |
+| ets     | EntityDataSource  | etsMovie   |
+| fv      | FormView          | fvCheckout |
+| gv      | GridView          | gvMovie    |
+| lds     | LinqDataSource    | ldsMovie   |
+| lv      | ListView          | lvMovie    |
+| ods     | ObjectDataSource  | odsMovie   |
+| qe      | QueryExtender     | qeMovie    |
+| rpt     | Repeater          | rptMovie   |
+| smd     | SiteMapDataSource | smdSitemap |
+| sds     | SqlDataSource     | sdsMovie   |
+| xds     | XmlDataSource     | xmlPosts   |
+
+### Validation Controls
+
+| Prefix | Control                    | Example            |
+|--------|----------------------------|--------------------|
+| cpv    | CompareValidator           | cpvConfirmPassword |
+| ctv    | CustomValidator            | cvPhoneNumber      |
+| rv     | RangeValidator             | rvLimit            |
+| rev    | RegularExpressionValidator | revDomainUrl       |
+| rfv    | RequiredFieldValidator     | rfvName            |
+| vs     | ValidationSummary          | vsSummary          |
