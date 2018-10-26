@@ -9,6 +9,7 @@
   * [ASP.NET Core](programming/aspnet/netcore/README.md)
     * [Helper](programming/aspnet/netcore/helper/README.md)
       * [CSV Helper](programming/aspnet/netcore/helper/csv-helper.md)
+      * [String Helper](programming/aspnet/netcore/helper/string-helper.md)
     * [Logging](programming/aspnet/netcore/logging/README.md)
       * [Simple Serilog](programming/aspnet/netcore/logging/simple-serilog.md)
     * [Middlewares](programming/aspnet/netcore/middlewares/README.md)
