@@ -103,7 +103,7 @@ Console.Write(StringHelper.TrimStart("-_-abc-_-", "-_-"));
 
 ## Source Code
 
-A sample string helper for common usage.
+A sample string helper for common usage. You can also get it from [NLibrary](https://github.com/nicholashew/NLibrary) in GitHub.
 
 ```csharp
 using System;
@@ -406,4 +406,3 @@ namespace Knowledge
     }
 }
 ```
-
