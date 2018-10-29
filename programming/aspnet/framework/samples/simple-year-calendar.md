@@ -2,7 +2,9 @@
 
 ## Frontend
 
-```aspx
+### CSS
+
+```css
 <style type="text/css">
     table.year-calendar td { padding:0; margin:0; border:1px solid #dadada; }
     table.year-calendar th { width:25px; text-align:center; }
@@ -15,6 +17,11 @@
     table.year-calendar td.month { background-color:#999999; }
     table.year-calendar td.weekend { background-color:#D0D0D0; }
 </style>
+```
+
+### ASPX Markup
+
+```aspx
 <table class="year-calendar table table-condensed table-hover table-striped">
     <thead>
         <tr>
