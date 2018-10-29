@@ -14,6 +14,7 @@
       * [Simple Serilog](programming/aspnet/netcore/logging/simple-serilog.md)
     * [Middlewares](programming/aspnet/netcore/middlewares/README.md)
       * [IP Restrictions](programming/aspnet/netcore/middlewares/ip-restrictions.md)
+      * [Request Throttling](programming/aspnet/netcore/middlewares/request-throttling.md)
   * [ASP.NET Framework](programming/aspnet/framework.md)
   * [Naming Conventions](programming/aspnet/naming-conventions.md)
   * [REST API Guidelines](programming/aspnet/rest-api-guidelines.md)
