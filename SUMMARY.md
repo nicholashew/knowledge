@@ -17,9 +17,7 @@
       * [Request Throttling](programming/aspnet/netcore/middlewares/request-throttling.md)
   * [ASP.NET Framework](programming/aspnet/README.md)
     * [Samples](programming/aspnet/framework/samples/README.md)
-      * [Simple Year Calendar](programming/aspnet/framework/samples/simple-year-calendar.md)
-  * [DevOps](programming/aspnet/devops/README.md)
-    * [CI & CD](programming/aspnet/devops/continuous-integration-delivery-and-deployment.md)
+      * [Simple Year Calendar](programming/aspnet/framework/samples/simple-year-calendar.md)  
   * [Testing](programming/aspnet/testing/README.md)
     * [Resources](programming/aspnet/testing/resources.md)
   * [Naming Conventions](programming/aspnet/naming-conventions.md)
@@ -33,6 +31,10 @@
 * [Javascript](programming/javascript/README.md)
   * [Javascript Libraries](programming/javascript/javascript-libraries.md)
 * [Python](programming/python.md)
+
+## DevOps
+* [Read Me](devops/README.md)
+    * [CI & CD](devops/continuous-integration-delivery-and-deployment.md)
 
 ## Tools
 
