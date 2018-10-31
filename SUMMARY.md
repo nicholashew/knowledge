@@ -21,6 +21,7 @@
       * [Simple Year Calendar](programming/aspnet/framework/samples/simple-year-calendar.md)  
   * [Testing](programming/aspnet/testing/README.md)
     * [Resources](programming/aspnet/testing/resources.md)
+    * [xUnit.net](programming/aspnet/testing/xUnit.md)
   * [Naming Conventions](programming/aspnet/naming-conventions.md)
   * [REST API Guidelines](programming/aspnet/rest-api-guidelines.md)
 * [Database](programming/database/README.md)
