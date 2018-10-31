@@ -8,6 +8,7 @@
   * [.NET Libraries](programming/aspnet/libraries.md)
   * [ASP.NET Core](programming/aspnet/netcore/README.md)
     * [Helper](programming/aspnet/netcore/helper/README.md)
+      * [Encryption](programming/aspnet/netcore/helper/encryption.md)
       * [CSV Helper](programming/aspnet/netcore/helper/csv-helper.md)
       * [String Helper](programming/aspnet/netcore/helper/string-helper.md)
     * [Logging](programming/aspnet/netcore/logging/README.md)
