@@ -35,6 +35,7 @@ A collection of awesome development libraries, resources and tools.
 * [CodeSandbox](https://codesandbox.io/) - An online code editor with a focus on creating and sharing web application projects.
 * [CodePen](https://codepen.io/) - An online community for testing and showcasing user-created HTML, CSS and JavaScript code snippets. It functions as an online code editor
 * [JSFiddle](http://jsfiddle.net/) - An online playground to code and share code, this time with many flavors of JavaScript.
+* [ExtendsClass](https://extendsclass.com) - Online playgrounds for testing Regex, XPath, JSONPath and SQL.
 
 ## IDE
 
