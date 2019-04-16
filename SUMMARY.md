@@ -34,6 +34,8 @@
 * [Javascript](programming/javascript/README.md)
   * [Javascript Libraries](programming/javascript/javascript-libraries.md)
 * [Python](programming/python.md)
+* [Misc](programming/misc/README.md)
+  * [Replace Filename Command](programming/misc/replace-filename-command.md)
 
 ## DevOps
 * [Read Me](devops/README.md)
