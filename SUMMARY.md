@@ -37,6 +37,7 @@
 * [Misc](programming/misc/README.md)
   * [JSON Web Token (JWT)](programming/misc/jwt.md)
   * [Replace Filename Command](programming/misc/replace-filename-command.md)
+  * [Pandoc Convert Document](programming/misc/pandoc-convert-document.md)
 
 ## DevOps
 * [Read Me](devops/README.md)
