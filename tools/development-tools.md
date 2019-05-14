@@ -107,4 +107,5 @@ A collection of awesome development libraries, resources and tools.
 * [ScreenToGif](https://www.screentogif.com/) - This tool allows you to record a selected area of your screen, edit and save it as a gif or video
 * [LightShot](https://app.prntscr.com/en/index.html) - LightShot allows you to take a customizable screenshot and it support for both Mac and Windows
 * [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) - A freeware that gathers information on some of the main devices of your system.
+* [Pandoc](https://pandoc.org/index.html) - A universal document converter (Markdown, Docx. Pdf, etc)
 
