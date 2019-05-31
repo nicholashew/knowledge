@@ -7,6 +7,8 @@
 * [ASP.NET](programming/aspnet/README.md)
   * [.NET Libraries](programming/aspnet/libraries.md)
   * [ASP.NET Core](programming/aspnet/netcore/README.md)
+    * [DNN (DotNetNuke)](#)
+      * [Generic DAL 2 Repository](programming/aspnet/DNN/generic-dal2-repository.md)
     * [Helper](programming/aspnet/netcore/helper/README.md)
       * [Encryption](programming/aspnet/netcore/helper/encryption.md)
       * [CSV Helper](programming/aspnet/netcore/helper/csv-helper.md)
