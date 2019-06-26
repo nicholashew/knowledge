@@ -2,6 +2,8 @@
 
 A collection of awesome development libraries, resources and tools.
 
+> For those resource with ⭐️ it's just my personal preference.
+
 * [Console](development-tools.md#console)
 * [Code Editor](development-tools.md#code-editor)
 * [Online Code Playground](development-tools.md#online-code-playground)
@@ -17,18 +19,19 @@ A collection of awesome development libraries, resources and tools.
 * [Server Tools](development-tools.md#server-tools)
 * [Windows Scripting](development-tools.md#windows-scripting)
 * [Utilities](development-tools.md#utilities)
+* [Monitoring](monitoring)
 
 ## Console
 
-* [Cmder](http://cmder.net/) - A software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout, looking sexy from the start.
+* [Cmder](http://cmder.net/) - ⭐️ A software package created out of pure frustration over the absence of nice console emulators on Windows. It is based on amazing software, and spiced up with the Monokai color scheme and a custom prompt layout, looking sexy from the start.
 * [Hyper](https://hyper.is/) - An Electron-Based Terminal build on HTML/CSS/JS
 
 ## Code Editor
 
 * [Sublime Text](https://www.sublimetext.com/) - A sophisticated text editor for code, markup and prose. You'll love the slick user interface, extraordinary features and amazing performance
-* [Visual Studio Code](https://code.visualstudio.com/) - Code editor redefined and optimized for building and debugging modern web and cloud applications.
+* [Visual Studio Code](https://code.visualstudio.com/) - ⭐️ Code editor redefined and optimized for building and debugging modern web and cloud applications.
 * [Atom](https://atom.io/) - A free and open-source text and source code editor for macOS, Linux, and Microsoft Windows with support for plug-ins written in Node.js, and embedded Git Control, developed by GitHub. Atom is a desktop application built using web technologies.
-* [Notepad++](https://notepad-plus-plus.org/) - A free source code editor and Notepad replacement that supports several languages for Windows, its use is governed by [GPL](http://www.gnu.org/copyleft/gpl.html) License.
+* [Notepad++](https://notepad-plus-plus.org/) - ⭐️ A free source code editor and Notepad replacement that supports several languages for Windows, its use is governed by [GPL](http://www.gnu.org/copyleft/gpl.html) License.
 
 ## Online Code Playground
 
@@ -41,7 +44,7 @@ A collection of awesome development libraries, resources and tools.
 
 * [Android Studio](https://developer.android.com/studio/) - Android Studio provides the fastest tools for building apps on every type of Android device.
 * [Eclipse](https://www.eclipse.org/) - A widely used Java IDE in computer programming. It contains a base workspace and an extensible plug-in system for customizing the environment.
-* [Visual Studio IDE](https://visualstudio.microsoft.com/vs/) - A fully-featured integrated development environment \(IDE\) for Android, iOS, Windows, web, and cloud.
+* [Visual Studio IDE](https://visualstudio.microsoft.com/vs/) - ⭐️ A fully-featured integrated development environment \(IDE\) for Android, iOS, Windows, web, and cloud.
 * [Pycharm](https://www.jetbrains.com/pycharm/) - PyCharm IDE is specifically for the Python language. It is developed by the Czech company [JetBrains](https://www.jetbrains.com/).
 * [WebStorm](https://www.jetbrains.com/webstorm/) - A powerful IDE for modern JavaScript development, perfectly equipped for building applications with React, Angular, Vue.js and Node.js.
 
@@ -59,9 +62,10 @@ A collection of awesome development libraries, resources and tools.
 
 ## Diff Tools
 
-* [Beyond Compare](https://www.scootersoftware.com/) - A data comparison utility. Aside from comparing files, the program is capable of doing side-by-side comparison of directories, FTP and SFTP directories, Dropbox directories, Amazon S3 directories, and archives. It is available for Windows, Mac OS, and Linux operating systems
+* [Beyond Compare](https://www.scootersoftware.com/) - ⭐️ A data comparison utility. Aside from comparing files, the program is capable of doing side-by-side comparison of directories, FTP and SFTP directories, Dropbox directories, Amazon S3 directories, and archives. It is available for Windows, Mac OS, and Linux operating systems
 * [WinMerge](http://winmerge.org/) - A free software tool for data comparison and merging of text-like files. It is useful for determining what has changed between versions, and then merging changes between versions.
 * [OpenDBDiff](https://github.com/OpenDBDiff/OpenDBDiff) - A database comparison tool for Microsoft SQL Server 2005+ that reports schema differences and creates a synchronization script.
+* [Code Compare](https://marketplace.visualstudio.com/items?itemName=DevartSoftware.CodeCompare) - File diff tool that reads structure of C#, C++,VB code for better results. Includes: folder comparison tool, standalone app for comparing and merging files and folders, code review support.
 
 ## Source Control
 
@@ -75,12 +79,13 @@ A collection of awesome development libraries, resources and tools.
 * [Android Studeo AVD Manager](https://developer.android.com/studio/) - An Android Emulator included with Android Studio IDE.
 * [GenyMotion](https://www.genymotion.com/) - Cross-platform Android emulator for developers & QA engineers. Develop & automate your tests to deliver best quality apps.
 * [BlueStacks](https://www.bluestacks.com/) - BlueStacks runs Android OS and apps on Windows PCs with instant switch between Android and Windows
-* [Nox App Player](https://www.bignox.com/) - Nox APP Player aims to provide the best experience for users to play Android games and apps on PC.
+* [Nox App Player](https://www.bignox.com/) - ⭐️ Nox APP Player aims to provide the best experience for users to play Android games and apps on PC.
 
 ## API Development Tools
 
-* [Postman](https://www.getpostman.com/) - The worldwide used by API development environment.
+* [Postman](https://www.getpostman.com/) - ⭐️ The worldwide used by API development environment.
 * [Paw](https://paw.cloud/) - The most advanced API tool for Mac.
+* [SoapUI](https://www.soapui.org/) - SoapUI is an open-source web service testing application for service-oriented architectures and representational state transfers. Its functionality covers web service inspection, invoking, development, simulation and mocking, functional testing, load and compliance testing.
 
 ## Cloud Storage Clients
 
@@ -103,9 +108,14 @@ A collection of awesome development libraries, resources and tools.
 
 ## Utilities
 
-* [FileLocator](https://www.mythicsoft.com/filelocatorlite/download/) - FileLocator is a powerful search utility for Windows
+* [FileLocator](https://www.mythicsoft.com/filelocatorlite/download/) - ⭐️ FileLocator is a powerful search utility for Windows
 * [ScreenToGif](https://www.screentogif.com/) - This tool allows you to record a selected area of your screen, edit and save it as a gif or video
 * [LightShot](https://app.prntscr.com/en/index.html) - LightShot allows you to take a customizable screenshot and it support for both Mac and Windows
 * [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html) - A freeware that gathers information on some of the main devices of your system.
 * [Pandoc](https://pandoc.org/index.html) - A universal document converter (Markdown, Docx. Pdf, etc)
 
+## Monitoring
+
+* [Uptime Robot](https://uptimerobot.com/) - ⭐️ Uptime Robot is all about helping you to keep your websites up. It monitors your websites every 5 minutes and alerts you if your sites are down. It is Free and easy to use compare to Pingdom.
+* [Pingdom](https://www.pingdom.com/) - ⭐️ Pingdom is an uptime monitoring service. When problems happen with a site that Pingdom monitors, it immediately alerts the owner so the problem can be taken care of. Pingdom is recommended if you need more features.
+* [Status Cake](https://www.statuscake.com/) - Monitoring tools that are quick-and-easy to set up. Instant alerts that you can trust, the moment your site goes down. Gain invaluable insights into how your website's performance is impacting your customers’ experiences – helping your business to stay ahead of the competition.
