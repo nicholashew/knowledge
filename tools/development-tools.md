@@ -104,7 +104,9 @@ A collection of awesome development libraries, resources and tools.
 
 ## Windows Scripting
 
-* [AutoHotkey](https://autohotkey.com/) - **AHK** is a free, open-source macro-creation and automation software for Windows that allows users to automate repetitive tasks
+* [AutoHotkey](https://autohotkey.com/) - ⭐️ **AHK** is a free, open-source macro-creation and automation software for Windows that allows users to automate repetitive tasks
+* [RabbitMQ](https://www.rabbitmq.com/download.html) - ⭐️ **RabbitMQ** is an open-source message-broker software that originally implemented the Advanced Message Queuing Protocol and has since been extended with a plug-in architecture to support Streaming Text Oriented Messaging Protocol, Message Queuing Telemetry Transport, and other protocols.
+* [Apache Kafka](https://kafka.apache.org/) - Apache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation, written in Scala and Java. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds.
 
 ## Utilities
 
