@@ -16,6 +16,8 @@
     * [Middlewares](programming/aspnet/netcore/middlewares/README.md)
       * [IP Restrictions](programming/aspnet/netcore/middlewares/ip-restrictions.md)
       * [Request Throttling](programming/aspnet/netcore/middlewares/request-throttling.md)
+    * [Console](#)
+      * [Command Line with arguments](programming/aspnet/netcore/console/command-line.md)
   * [ASP.NET Framework](programming/aspnet/README.md)
     * [DNN (DotNetNuke)](#)
       * [Generic DAL 2 Repository](programming/aspnet/DNN/generic-dal2-repository.md)
