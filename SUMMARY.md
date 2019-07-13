@@ -44,6 +44,7 @@
   * [Pandoc Convert Document](programming/misc/pandoc-convert-document.md)
 
 ## DevOps
+
 * [Read Me](devops/README.md)
     * [CI & CD](devops/continuous-integration-delivery-and-deployment.md)
 
