@@ -58,6 +58,8 @@ SELECT * FROM dbo.split_delimited_int ('1,2,3, ,   ,3', ',')
 
 ## Split single delimeter string to table
 
+A table-valued function that splits a string into rows of substrings, based on a specified separator character.
+
 ```sql
 USE [SampleDB]
 GO
@@ -117,4 +119,33 @@ SELECT * FROM dbo.split_string ('ab,c,1,2,c', ',')
 | 1   | 3   |
 | 2   | 4   |
 | c   | 5   |
+```
+
+## STRING_SPLIT (Transact-SQL)
+
+If you are using **SQL Server 2016 and later**, you can use the built-in function **STRING_SPLIT**.
+
+```sql
+--example 1
+SELECT ProductId, Name, Tags  
+FROM Product  
+JOIN STRING_SPLIT('1,2,3',',')
+    ON value = ProductId; 
+```
+
+```sql
+--example 2
+DECLARE @tags NVARCHAR(400) = 'clothing,road,,touring,bike'  
+  
+SELECT value  
+FROM STRING_SPLIT(@tags, ',')  
+WHERE RTRIM(value) <> '';
+```
+
+The preceding `STRING_SPLIT` usage is a replacement for a common anti-pattern. Such an anti-pattern can involve the creation of a dynamic SQL string in the application layer or in Transact-SQL. Or an anti-pattern can be achieved by using the LIKE operator. See the following example SELECT statement:
+
+```sql
+SELECT ProductId, Name, Tags  
+FROM Product  
+WHERE ',1,2,3,' LIKE '%,' + CAST(ProductId AS VARCHAR(20)) + ',%';  
 ```
