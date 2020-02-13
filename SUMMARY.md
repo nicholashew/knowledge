@@ -42,6 +42,7 @@
   * [JSON Web Token (JWT)](programming/misc/jwt.md)
   * [Replace Filename Command](programming/misc/replace-filename-command.md)
   * [Pandoc Convert Document](programming/misc/pandoc-convert-document.md)
+  * [Common OpenSSL Commands](programming/misc/common-openssl-commands.md)
 
 ## DevOps
 
