@@ -193,7 +193,7 @@ SELECT dbo.ValidateUEN('01231234AX') --invalid format of 'yyyynnnnnX
 SELECT dbo.ValidateUEN('A19L11990Z') --invalid format of 'TyyPQnnnnX' / 'SyyPQnnnnX' / 'RyyPQnnnnX'
 ```
 
-## Reference
+### Reference
 - [ACRA UEN](https://www.uen.gov.sg/ueninternet/faces/pages/admin/aboutUEN.jspx?_afrLoop=293672504908005&_afrWindowMode=0&_afrWindowId=null&_adf.ctrl-state=9eqqgl3aj_1)
 - [Data.gov.sg](https://data.gov.sg/dataset/entities-with-unique-entity-number?resource_id=bdb377b8-096f-4f86-9c4f-85bad80ef93c)
 - [ValidateUEN.js](https://gist.github.com/mervintankw/90d5660c6ab03a83ddf77fa8199a0e52)
