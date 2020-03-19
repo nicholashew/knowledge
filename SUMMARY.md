@@ -34,6 +34,7 @@
     * [Looping](programming/database/mssql/looping.md)
     * [Table Valued Functions](programming/database/mssql/table-valued-functions.md)
     * [Session State](programming/database/mssql/session-state.md)
+    * [SQL Cheat Sheet](programming/database/mssql/sql-cheatsheet.md)
 * [Java](programming/java.md)
 * [Javascript](programming/javascript/README.md)
   * [Javascript Libraries](programming/javascript/javascript-libraries.md)
