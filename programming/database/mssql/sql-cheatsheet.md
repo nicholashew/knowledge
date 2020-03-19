@@ -2,7 +2,8 @@
 
 - [Date Conversion](#date-conversion)
 - [Strip Non-Alphabetic Characters](#strip-non-alphabetic-characters)
-- [SG NRIC Validation](#sg-nric-validation)
+- [Validate UEN](#validate-uen)
+- [Validate SG NRIC](#validate-sg-nric)
 
 ## Date Conversion
 
@@ -59,7 +60,145 @@ Sample Usage
 SELECT dbo.RemoveNonAlphaCharacters('1-_ @ MARCH"''''')
 ```
 
-## SG NRIC Validation
+## Validate UEN
+
+A custom scalar function created by myself to validate for Unique Entity Number (UEN). 
+*PS Feel free to contribute for the UEN validate function if there is any missing validation rules.
+
+```sql
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+-- ================================================
+-- Scalar function to validate Unique Entity Number (UEN)
+-- Please note that this function did not 
+-- validate entity type for (C) All entities which are issued new UEN 
+-- ================================================
+-- # UEN Types
+-- (A) Businesses registered with ACRA before 1 January 2009 - Foramt: nnnnnnnnX (9 digits)
+-- (B) Local companies registered with ACRA before 1 January 2009 - Foramt: yyyynnnnnX (10 digits)
+-- (C) All entities which are issued new UEN - Foramt: TyyPQnnnnX / SyyPQnnnnX / RyyPQnnnnX (10 digits)
+-- ================================================
+-- # Descriptions
+-- ‘n’ = a number 
+-- ‘P’= an alphabetical letter
+-- ‘Q’ = an alpha-numeric digit
+-- ‘PQ’ = Entity-type 1
+-- ‘Tyy’ / ‘Syy’ / ‘yyyy’= year of issuance 2
+-- ‘X’ = a check alphabetFor example, the UEN for a limited liability partnership (LLP) formed on 1 January 2009 could be ‘T09LL0001B’.
+-- ================================================
+
+CREATE FUNCTION [dbo].[ValidateUEN] (@str VARCHAR(15)) returns BIT
+AS
+BEGIN
+
+	SET @str = LTRIM(RTRIM(ISNULL(@str, '')));
+
+	-- check that uen is not empty
+	IF @str = ''
+		RETURN 0
+
+	-- check if uen is 9 or 10 digits
+	IF LEN(@str) < 9 OR LEN(@str) > 10
+		RETURN 0
+
+	-- transform to UPPER CASE
+	SET @str = UPPER(@str);
+
+	-- (A) Businesses registered with ACRA - nnnnnnnnX (9 digits)
+	IF LEN(@str) = 9
+	BEGIN
+		-- check that last character is a letter/alphabet
+		IF SUBSTRING(@str, 9, 1) NOT LIKE '%[A-Z]%' 
+			RETURN 0
+
+		-- check that first 8 letters are all numbers
+		IF SUBSTRING(@str, 1, 8) NOT LIKE ('[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]')
+			RETURN 0
+
+		-- (A) Businesses registered with ACRA (SUCCESS)
+		RETURN 1
+	END
+	ELSE IF LEN(@str) = 10
+	BEGIN
+		-- check that last character is a letter
+		IF SUBSTRING(@str, 10, 1) NOT LIKE '%[A-Z]%' 
+			RETURN 0
+			
+		-- (B) Local companies registered with ACRA before 1 January 2009 - yyyynnnnnX (10 digits)
+		IF SUBSTRING(@str, 1, 4) LIKE ('[0-9][0-9][0-9][0-9]')
+		BEGIN			
+			IF SUBSTRING(@str, 5, 5) LIKE ('[0-9][0-9][0-9][0-9][0-9]')
+				RETURN 1
+			ELSE
+				RETURN 0
+		END
+		ELSE
+		BEGIN
+			-- (C) All entities which are issued new UEN - TyyPQnnnnX / SyyPQnnnnX / RyyPQnnnnX (10 digits)
+						
+			-- check that 1st letter is either T or S or R
+			IF SUBSTRING(@str, 1, 1) NOT IN ('T', 'S', 'R')
+				RETURN 0
+
+			-- check that 2nd and 3rd letters are numbers only
+			IF SUBSTRING(@str, 2, 2) NOT LIKE ('[0-9][0-9]')
+				RETURN 0
+
+			-- check that 4th letter is an alphabet
+			IF SUBSTRING(@str, 4, 1) NOT LIKE '%[A-Z]%' 
+				RETURN 0
+							
+			-- check that 5th letter is an alphanumeric
+			IF PATINDEX('%[^a-zA-Z0-9]%' , SUBSTRING(@str, 5, 1)) <> 0
+				RETURN 0
+
+			-- check that 6th to 9th letters are numbers only
+			IF SUBSTRING(@str, 6, 4) NOT LIKE ('[0-9][0-9][0-9][0-9]')
+				RETURN 0
+
+			-- (C) All other entities which will be issued new UEN (SUCCESS)
+			RETURN 1
+		END
+
+		RETURN 0
+	END
+
+	RETURN 0 --default false
+END
+GO
+```
+
+Sample Usage
+
+```sql
+-- expected valid (A) Businesses UEN in format 'nnnnnnnnX'
+SELECT dbo.ValidateUEN('12345678X')
+
+-- expected valid (B) Local companies in format 'yyyynnnnnX'
+SELECT dbo.ValidateUEN('202012345X')
+
+-- expected valid (C) issued new UEN in format 'TyyPQnnnnX' / 'SyyPQnnnnX' / 'RyyPQnnnnX'
+SELECT dbo.ValidateUEN('T19L11990Z')
+SELECT dbo.ValidateUEN('S19L01900A')
+SELECT dbo.ValidateUEN('R19L10000B')
+
+-- expected invalid format
+SELECT dbo.ValidateUEN('1234567890X') -- exceeds 10 chars
+SELECT dbo.ValidateUEN('123456ABC') --invalid format of 'nnnnnnnnX
+SELECT dbo.ValidateUEN('01231234AX') --invalid format of 'yyyynnnnnX
+SELECT dbo.ValidateUEN('A19L11990Z') --invalid format of 'TyyPQnnnnX' / 'SyyPQnnnnX' / 'RyyPQnnnnX'
+```
+
+## Reference
+- [ACRA UEN](https://www.uen.gov.sg/ueninternet/faces/pages/admin/aboutUEN.jspx?_afrLoop=293672504908005&_afrWindowMode=0&_afrWindowId=null&_adf.ctrl-state=9eqqgl3aj_1)
+- [Data.gov.sg](https://data.gov.sg/dataset/entities-with-unique-entity-number?resource_id=bdb377b8-096f-4f86-9c4f-85bad80ef93c)
+- [ValidateUEN.js](https://gist.github.com/mervintankw/90d5660c6ab03a83ddf77fa8199a0e52)
+
+## Validate SG NRIC
 
 Scalar function to validate Singapore Identification Number / FIN Number.
 
