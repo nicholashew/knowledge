@@ -4,6 +4,7 @@ A collection of awesome development libraries, resources and tools.
 
 > For those resource with ⭐️ it's just my personal preference.
 
+* [Analytics Platform](development-tools.md#analytics-platform)
 * [Console](development-tools.md#console)
 * [Code Editor](development-tools.md#code-editor)
 * [Online Code Playground](development-tools.md#online-code-playground)
@@ -20,6 +21,11 @@ A collection of awesome development libraries, resources and tools.
 * [Windows Scripting](development-tools.md#windows-scripting)
 * [Utilities](development-tools.md#utilities)
 * [Monitoring](development-tools.md#monitoring)
+
+## Analytics Platform
+
+* [Qlik Sense](https://www.qlik.com/us/products/qlik-sense) - Custom & Embedded Analytics Qlik Sense is a complete analytics platform that helps you tackle even the most complex analytics challenges. The complete set of open APIs enables you to fully customize analytics solutions.
+* [Tableau](https://www.tableau.com/) - Tableau Software is an American interactive data visualization software company founded in January 2003 by Christian Chabot, Pat Hanrahan and Chris Stolte, in Mountain View, California. The company is currently headquartered in Seattle, Washington, United States focused on business intelligence.
 
 ## Console
 
