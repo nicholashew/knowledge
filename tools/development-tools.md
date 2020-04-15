@@ -100,13 +100,16 @@ A collection of awesome development libraries, resources and tools.
 ## Server Tools
 
 * [Apache JMeter](https://jmeter.apache.org/) - Apache JMeter is an Apache project that can be used as a load testing tool for analyzing and measuring the performance of a variety of services, with a focus on web applications
+* [LoadRunner](https://www.microfocus.com/en-us/products/loadrunner-professional/download) - LoadRunner is a software testing tool from Micro Focus. It is used to test applications, measuring system behaviour and performance under load. LoadRunner can simulate thousands of users concurrently using application software, recording and later analyzing the performance of key components of the application.
 * [CollectD](http://collectd.org/) - A popular open source daemon, which collects basic system performance statistics over time and stores the data it collects in multiple formats, such as the RRD files that Cacti can use to graph the data.
+* [Barracuda Load Balancer ADC](https://www.barracuda.com/products/loadbalancer) - The Barracuda Load Balancer ADC is ideal for organizations looking for a high-performance, yet cost-effective application delivery and security solution.
 
 ## Windows Scripting
 
 * [AutoHotkey](https://autohotkey.com/) - ⭐️ **AHK** is a free, open-source macro-creation and automation software for Windows that allows users to automate repetitive tasks
 * [RabbitMQ](https://www.rabbitmq.com/download.html) - ⭐️ **RabbitMQ** is an open-source message-broker software that originally implemented the Advanced Message Queuing Protocol and has since been extended with a plug-in architecture to support Streaming Text Oriented Messaging Protocol, Message Queuing Telemetry Transport, and other protocols.
 * [Apache Kafka](https://kafka.apache.org/) - Apache Kafka is an open-source stream-processing software platform developed by LinkedIn and donated to the Apache Software Foundation, written in Scala and Java. The project aims to provide a unified, high-throughput, low-latency platform for handling real-time data feeds.
+* [Automic](https://docs.automic.com/documentation) - ⭐️ Use workload automation for business application and IT infrastructure processing and complex service orchestration. (💰 Enterprise Software)
 
 ## Utilities
 
