@@ -45,7 +45,8 @@
   * [Replace Filename Command](programming/misc/replace-filename-command.md)
   * [Pandoc Convert Document](programming/misc/pandoc-convert-document.md)
   * [Common OpenSSL Commands](programming/misc/common-openssl-commands.md)
-  * [Create Self-Signed Certificate](programming/misc/create-self-signed-cert.md)
+  * [Common Git Commands](programming/misc/git-commands.md)
+  * [Create Self-Signed Certificate](programming/misc/create-self-signed-cert.md)  
 
 ## DevOps
 
