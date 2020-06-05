@@ -1,5 +1,21 @@
 # Git Commands
 
+# Table of Contents
+
+<details>
+<summary>Expand Table of Contents</summary>
+  
+- [Initialize Git](#initialize-git)
+- [Commit Files](#commit-files)
+- [Create New Branch](#create-new-branch)
+- [List All branches](#list-all-branches)
+- [How to push a new local branch to a remote Git repository](#how-to-push-a-new-local-branch-to-a-remote-git-repository)
+- [How to checkout a remote branch into new local branch ](#how-to-checkout-a-remote-branch-into-new-local-branch)
+- [How to clean deleted remote branches from local git](#how-to-clean-deleted-remote-branches-from-local-git)
+- [How to rebase](#how-to-rebase)
+
+</details>
+
 ## Initialize Git
 
 ```
