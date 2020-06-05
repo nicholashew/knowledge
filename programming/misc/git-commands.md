@@ -1,5 +1,55 @@
 # Git Commands
 
+## Initialize Git
+
+```
+git init
+```
+
+## Commit Files
+
+Create some files, and then run the command below to stage all changes. You can also specific the full file path for selected files
+
+```
+git add .
+```
+
+Run the command below to see the staged changes
+
+```
+git status
+```
+
+Lastly, commit the staged changes
+
+```
+git commit -m "Add some files!"
+```
+
+## Create New Branch
+
+Create a new branch from a local branch
+
+```
+git checkout -b new-branch-name
+```
+
+## List All branches
+
+```
+git branch -a
+```
+
+You shall see the list of branches
+
+```
+C:\git-repo\knowledge>git branch -a
+  master
+* my-current-local-branch
+  remotes/origin/master
+  remotes/origin/HEAD -> origin/master
+```
+
 ## How to push a new local branch to a remote Git repository
 
 1. Create a new branch.
