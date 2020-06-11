@@ -2,21 +2,47 @@
 
 A simple CI pipeline of a netcore3.1 webapi
 
-Sample Web API project structure
+Create a sample Web API and a xunit projects using cmd.
+
+- Create the app folder
+```
+mkdir app && cd app
+```
+
+- Create a web api project
+```
+dotnet new webapi -n Sample -o src\Sample
+```
+
+- Create a xunit project
+```
+dotnet new xunit -n Sample.Tests -o tests\Sample.Tests
+```
+
+- Create a .gitignore file
+```
+dotnet new gitignore
+```
+
+- Create a blank azure pipeline file
+```
+copy nul azure-pipelines.yml
+```
+
+Below is the expected project structures
 
 ```
 app.
 |
 |   .gitignore
 |   azure-pipelines.yml
-|   sample.code-workspace
 |
 +---src
 |   \---Sample
 |       |   appsettings.Development.json
 |       |   appsettings.json
-|       |   netcore.csproj
 |       |   Program.cs
+|       |   Sample.csproj
 |       |   Startup.cs
 |       |   WeatherForecast.cs
 |       |
@@ -28,11 +54,18 @@ app.
 |
 \---tests
     \---Sample.Tests
-            Sample.Tests.csproj
-            UnitTest1.cs
+        |   Sample.Tests.csproj
+        |   UnitTest1.cs
+        |
+        \---obj
+                project.assets.json
+                project.nuget.cache
+                Sample.Tests.csproj.nuget.dgspec.json
+                Sample.Tests.csproj.nuget.g.props
+                Sample.Tests.csproj.nuget.g.targets
 ```
 
-Sample YAML 
+Update the `azure-pipelines.yml` with the settings below
 
 ```yaml
 # Starter pipeline
@@ -97,3 +130,23 @@ steps:
     publishLocation: 'Container'
 
 ```
+
+- Create a Azure DevOps project, and push your source code to the Azure Git Repository.
+
+- Navigate to `Pipelines` and then create a new pipeline.
+
+  - Select `Azure Git Repo` (YAML)
+
+  - Select your git repository of the source code
+
+  - Select `Existing Azure Piepelines YAML file`, and then select the `azure-pipelines.yml` from `master` branch
+
+  - Review and Save.
+  
+ - The pipeline will be automatically run when triggered by the `master` branch, you can configure the trigger conditions to suit your requirements.
+     ```
+     trigger:
+    - master
+    ```
+  
+- You can view the pipeline status by clicking on the Jobs running.
