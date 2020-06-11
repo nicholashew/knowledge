@@ -52,10 +52,10 @@
 
 ## DevOps
 
-* [Read Me](devops/README.md)
-    * [CI & CD](devops/continuous-integration-delivery-and-deployment.md)    
-    * [Azure DevOps](#)
-      * [Configure .NET Core CI Pipeline](devops/azure-devops/dotnet-core-ci-pipeline.md)
+* [What is DevOps](devops/README.md)
+* [CI & CD](devops/continuous-integration-delivery-and-deployment.md)    
+* [Azure DevOps](#)
+  * [Configure .NET Core CI Pipeline](devops/azure-devops/dotnet-core-ci-pipeline.md)
 
 ## Tools
 
