@@ -56,13 +56,6 @@ app.
     \---Sample.Tests
         |   Sample.Tests.csproj
         |   UnitTest1.cs
-        |
-        \---obj
-                project.assets.json
-                project.nuget.cache
-                Sample.Tests.csproj.nuget.dgspec.json
-                Sample.Tests.csproj.nuget.g.props
-                Sample.Tests.csproj.nuget.g.targets
 ```
 
 Update the `azure-pipelines.yml` with the settings below
