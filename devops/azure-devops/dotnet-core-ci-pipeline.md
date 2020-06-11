@@ -136,6 +136,8 @@ steps:
 
   - Review and Save.
   
+  ![](https://raw.githubusercontent.com/nicholashew/knowledge/master/assets/images/add-azure-pipeline-yaml.gif)
+  
  - The pipeline will be automatically run when triggered by the `master` branch, you can configure the trigger conditions to suit your requirements.
      ```
      trigger:
