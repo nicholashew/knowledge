@@ -42,14 +42,14 @@
   * [Javascript Libraries](programming/javascript/javascript-libraries.md)
 * [Python](programming/python.md)
 * [Misc](programming/misc/README.md)
-  * [JSON Web Token (JWT)](programming/misc/jwt.md)
-  * [Rabbit MQ Message-Broker](programming/misc/rabbit-mq.md)
-  * [Replace Filename Command](programming/misc/replace-filename-command.md)
-  * [Pandoc Convert Document](programming/misc/pandoc-convert-document.md)
-  * [Common OpenSSL Commands](programming/misc/common-openssl-commands.md)
   * [Common Git Commands](programming/misc/git-commands.md)
   * [Common Windows Commands](programming/misc/common-batch-command.md)  
+  * [Replace Filename Command](programming/misc/replace-filename-command.md)
+  * [JSON Web Token (JWT)](programming/misc/jwt.md)
+  * [Rabbit MQ Message-Broker](programming/misc/rabbit-mq.md)    
+  * [Common OpenSSL Commands](programming/misc/common-openssl-commands.md)
   * [Create Self-Signed Certificate](programming/misc/create-self-signed-cert.md)  
+  * [Pandoc Convert Document](programming/misc/pandoc-convert-document.md)
 
 ## DevOps
 
