@@ -48,6 +48,7 @@
   * [Pandoc Convert Document](programming/misc/pandoc-convert-document.md)
   * [Common OpenSSL Commands](programming/misc/common-openssl-commands.md)
   * [Common Git Commands](programming/misc/git-commands.md)
+  * [Common Windows Commands](programming/misc/common-batch-command.md)  
   * [Create Self-Signed Certificate](programming/misc/create-self-signed-cert.md)  
 
 ## DevOps
