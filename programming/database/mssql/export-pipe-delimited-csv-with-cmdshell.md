@@ -68,3 +68,8 @@ EXECUTE master.dbo.xp_cmdshell 'bcp "
   SELECT * FROM [LocalTest].[dbo].[DoctorForHtmlListing_vw]
   " queryout C:\temp\DoctorForHtmlListing.csv -t"|" -c -T -S' 
 ```
+
+## Reference
+
+- [Microsoft - xp_cmdshell (Transact-SQL)](https://docs.microsoft.com/en-us/sql/relational-databases/system-stored-procedures/xp-cmdshell-transact-sql?view=sql-server-ver15)
+- [Enabling xp_cmdshell in SQL Server](https://www.mssqltips.com/sqlservertip/1020/enabling-xpcmdshell-in-sql-server/)
