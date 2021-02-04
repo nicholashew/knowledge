@@ -39,6 +39,23 @@ openssl req -x509 -newkey rsa:4096 -keyout localhost.key -out localhost.crt -day
 openssl pkcs12 -export -out localhost.pfx -inkey localhost.key -in localhost.crt -name "Localhost selfsigned certificate"
 ```
 
+## Simple steps to create self-signed certificate
+
+Using commands below to generate `private.key`, `.csr`, `self-signed-crt`, `keyStore.pfx`, `certificate.pem`
+```
+# Generate new private key and csr, with blank password
+openssl req -new -newkey rsa:2048 -nodes -keyout privateKey.key -out CSR.csr 
+
+# Generate self-signed cert 
+openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt
+
+# Convert privateKey & certificate to keyStore pfx, with friendly alias name = "1", with blank keyStore password
+openssl pkcs12 -export -out keyStore.pfx -inkey privateKey.key -in certificate.crt -name "1"
+
+# Convert pfx to pem
+openssl pkcs12 -in keyStore.pfx -out certificate.pem -nodes
+```
+
 ## Reference
 
 - [Self Signed Certificate](https://www.kimsereylam.com/dotnetcore/csharp/oidc/2018/07/06/self-signed-certificate-for-identity-server.html)
