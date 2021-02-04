@@ -50,6 +50,7 @@
   * [Rabbit MQ Message-Broker](programming/misc/rabbit-mq.md)    
   * [Common OpenSSL Commands](programming/misc/common-openssl-commands.md)
   * [Create Self-Signed Certificate](programming/misc/create-self-signed-cert.md)  
+  * [One Way SSL & Two Way SSL](programming/misc/1-way-ssl-and-2-way-ssl.md)
   * [Pandoc Convert Document](programming/misc/pandoc-convert-document.md)
 
 ## DevOps
