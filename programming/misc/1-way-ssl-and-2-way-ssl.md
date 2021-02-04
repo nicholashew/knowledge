@@ -12,6 +12,8 @@
 - Server sends ChangeCipherSpec message to activate the negotiated options for all future messages it will send.
 - Server sends Finished message to let the client check the newly activated options.
 
+![screenshot](https://github.com/nicholashew/knowledge/blob/master/assets/images/one-way-ssl.png?raw=true)
+
 ## 2 Way SSL
 
 - Client sends ClientHello message proposing SSL options.
@@ -26,6 +28,8 @@
 - Client sends Finished message to let the server check the newly activated options.
 - Server sends ChangeCipherSpec message to activate the negotiated options for all future messages it will send.
 - Server sends Finished message to let the client check the newly activated options.
+
+![screenshot](https://github.com/nicholashew/knowledge/blob/master/assets/images/2-way-ssl.png?raw=true)
 
 To simplify the process of 2way TLS handshake, we can say
 1. A client sends a request to access to protected information on the server.
