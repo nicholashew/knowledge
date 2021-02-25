@@ -110,6 +110,10 @@ A collection of awesome development libraries, resources and tools.
 * [CollectD](http://collectd.org/) - A popular open source daemon, which collects basic system performance statistics over time and stores the data it collects in multiple formats, such as the RRD files that Cacti can use to graph the data.
 * [Barracuda Load Balancer ADC](https://www.barracuda.com/products/loadbalancer) - The Barracuda Load Balancer ADC is ideal for organizations looking for a high-performance, yet cost-effective application delivery and security solution.
 
+## Packet Analyzer
+
+* [Wireshark](https://www.wireshark.org/download.html) - Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. Originally named Ethereal, the project was renamed Wireshark in May 2006 due to trademark issues
+
 ## Windows Scripting
 
 * [AutoHotkey](https://autohotkey.com/) - ⭐️ **AHK** is a free, open-source macro-creation and automation software for Windows that allows users to automate repetitive tasks
