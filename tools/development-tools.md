@@ -18,6 +18,7 @@ A collection of awesome development libraries, resources and tools.
 * [Cloud Storage Clients](development-tools.md#cloud-storage-clients)
 * [SSH](development-tools.md#ssh)
 * [Server Tools](development-tools.md#server-tools)
+* [Packet Analyzer](development-tools.md#packet-analyzer)
 * [Windows Scripting](development-tools.md#windows-scripting)
 * [Utilities](development-tools.md#utilities)
 * [Monitoring](development-tools.md#monitoring)
