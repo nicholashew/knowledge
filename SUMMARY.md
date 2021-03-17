@@ -16,6 +16,7 @@
     * [Middlewares](programming/aspnet/netcore/middlewares/README.md)
       * [IP Restrictions](programming/aspnet/netcore/middlewares/ip-restrictions.md)
       * [Request Throttling](programming/aspnet/netcore/middlewares/request-throttling.md)
+      * [Request Logging](programming/aspnet/netcore/middlewares/request-logging-middleware.md)
     * [Console](#)
       * [Command Line with arguments](programming/aspnet/netcore/console/command-line.md)
     * [JSON](#)
