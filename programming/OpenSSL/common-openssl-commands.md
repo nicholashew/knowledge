@@ -49,6 +49,11 @@ openssl x509 -in certificate.crt -text -noout
 openssl pkcs12 -info -in keyStore.p12
 ```
 
+- List the certificates stored in a PKCS12 keystore with Java Keytool
+```
+keytool -list -v -keystore <path to keystore.pfx> -storepass <password> -storetype PKCS12
+```
+
 ## Debugging Using OpenSSL
 
 - Check an MD5 hash of the public key to ensure that it matches with what is in a CSR or private key
