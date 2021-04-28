@@ -50,6 +50,7 @@
 * [Misc](programming/misc/README.md)
   * [Common Git Commands](programming/misc/git-commands.md)
   * [Common Windows Commands](programming/misc/common-batch-command.md)  
+  * [Vulnerabilities Dependency Check](programming/misc/vulnerabilities-dependency-check.md)
   * [Replace Filename Command](programming/misc/replace-filename-command.md)
   * [JSON Web Token (JWT)](programming/misc/jwt.md)
   * [Rabbit MQ Message-Broker](programming/misc/rabbit-mq.md)
