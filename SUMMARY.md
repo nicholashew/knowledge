@@ -50,6 +50,7 @@
 * [Misc](programming/misc/README.md)
   * [Common Git Commands](programming/misc/git-commands.md)
   * [Common Windows Commands](programming/misc/common-batch-command.md)  
+  * [Common PowerShell Commands](programming/misc/common-powershel-command.md)
   * [Vulnerabilities Dependency Check](programming/misc/vulnerabilities-dependency-check.md)
   * [Replace Filename Command](programming/misc/replace-filename-command.md)
   * [JSON Web Token (JWT)](programming/misc/jwt.md)
