@@ -123,7 +123,6 @@ IF '%choice%'=='Y' GOTO start
 IF '%choice%'=='y' GOTO start
 IF '%choice%'=='N' GOTO end
 IF '%choice%'=='n' GOTO end
-IF '%choice%'=='Y' GOTO start
 
 REM - prompt for input again if invalid choice is provided   
 ECHO "%choice%" is not valid, try again
