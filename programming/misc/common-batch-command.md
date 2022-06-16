@@ -77,7 +77,7 @@ For example:
 
 If you do this manually and very frequent, you may consider to create a simple Batch Script file to prompt you to enter the MFA OTP.
 
-```
+```bat
 @ECHO off
 cls
 
