@@ -34,6 +34,8 @@
 * [Database](programming/database/README.md)
   * [SQL Style Guide](programming/database/sql-style-guides.md)
   * [MSSQL](programming/database/mssql/README.md)
+    * Installation
+      * [Install MSSQL on MacOS M1 (ARM64)](programming/database/mssql/mssql-installation-mac-os-m1-arm64.md)  
     * [Looping](programming/database/mssql/looping.md)
     * [Table Valued Functions](programming/database/mssql/table-valued-functions.md)
     * [Session State](programming/database/mssql/session-state.md)
